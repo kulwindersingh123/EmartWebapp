@@ -12,7 +12,6 @@ import { setUserDetails } from '../store/userSlice';
 import ROLE from '../common/role';
 import Logo from './Logo';
 
-// ... import statements remain the same
 
 const Header = () => {
   const user = useSelector(state => state?.user?.user);
@@ -73,11 +72,11 @@ const Header = () => {
         <div className="flex items-center gap-6">
           {/* Cart */}
           {user?._id && (
-            <Link to="/cart" className="relative flex items-center gap-1 hover:text-blue-600 transition">
+            <Link to="/cart" className="relative flex items-center gap-1 hover:text-[#38a3a5] transition">
               <FaShoppingCart className="text-xl" />
               <span className="text-sm">Cart</span>
               {context?.cartProductCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full animate-pulse">
+                <span className="absolute -top-2 -right-2 bg-[#5588a3] text-white text-xs w-4 h-4 flex items-center justify-center rounded-full animate-pulse">
                   {context.cartProductCount}
                 </span>
               )}
@@ -88,7 +87,7 @@ const Header = () => {
           {user?._id ? (
             <div className="relative">
               <button
-                className="flex items-center gap-1 rounded-md px-2 py-1 border border-gray-300 hover:border-blue-500"
+                className="flex items-center gap-1 rounded-md px-2 py-1 border border-gray-300 hover:border-[#5588a3]"
                 onClick={() => setMenuOpen(prev => !prev)}
               >
                 {user?.profilePic ? (
@@ -112,7 +111,7 @@ const Header = () => {
                       </Link>
                     )}
                     <button
-                      className="w-full text-left px-4 py-2 hover:bg-red-100 text-red-600"
+                      className="w-full text-left px-4 py-2 hover:bg-[#5588a3]/10 text-[#5588a3]"
                       onClick={handleLogout}
                     >
                       Logout

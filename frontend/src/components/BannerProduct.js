@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../assest/banner/img1.webp';
-import img2 from '../assest/banner/img2.webp';
-import img3 from '../assest/banner/img3.jpg';
-import img4 from '../assest/banner/img4.jpg';
+import img1 from '../assest/banner/7862886.jpg';
+import img2 from '../assest/banner/headphone.webp';
+import img3 from '../assest/banner/10226827.jpg';
+import img4 from '../assest/banner/20866.jpg';
 import img5 from '../assest/banner/img5.webp';
+
 
 const banners = [
   {
@@ -68,7 +69,7 @@ const BannerProductGrid = () => {
             </div>
 
             {/* Fade border ring on hover */}
-            <div className="absolute inset-0 rounded-xl ring-2 ring-transparent group-hover:ring-red-500 transition-all duration-300" />
+            <div className="absolute inset-0 rounded-xl ring-2 ring-transparent group-hover:ring-[#38a3a5] transition-all duration-300" />
           </Link>
         ))}
       </div>

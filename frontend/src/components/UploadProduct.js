@@ -99,7 +99,7 @@ const UploadProduct = ({
 
             <div className='flex justify-between items-center pb-3'>
                 <h2 className='font-bold text-lg'>Upload Product</h2>
-                <div className='w-fit ml-auto text-2xl hover:text-red-600 cursor-pointer' onClick={onClose}>
+                <div className='w-fit ml-auto text-2xl hover:text-[#38a3a5] cursor-pointer' onClick={onClose}>
                     <CgClose/>
                 </div>
             </div>
@@ -227,7 +227,7 @@ const UploadProduct = ({
 
 
 
-              <button className='px-3 py-2 bg-red-600 text-white mb-10 hover:bg-red-700'>Upload Product</button>
+              <button className='px-3 py-2 bg-[#38a3a5] text-white mb-10 hover:bg-red-700'>Upload Product</button>
           </form> 
 
 

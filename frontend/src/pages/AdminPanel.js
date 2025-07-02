@@ -46,7 +46,7 @@ const AdminPanel = () => {
             to="all-users"
             className={`block px-4 py-2 rounded-md font-medium text-sm transition ${
               isActive('all-users')
-                ? 'bg-red-100 text-red-600'
+                ? 'bg-[#38a3a5] text-red-600'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
           >
@@ -56,7 +56,7 @@ const AdminPanel = () => {
             to="all-products"
             className={`block px-4 py-2 rounded-md font-medium text-sm transition ${
               isActive('all-products')
-                ? 'bg-red-100 text-red-600'
+                ? 'bg-[#38a3a5] text-red-600'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
           >

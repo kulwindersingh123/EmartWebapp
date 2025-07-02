@@ -13,7 +13,7 @@ const Footer = () => {
             href="https://www.youtube.com/@KulwinderSingh-ip1nt"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-red-500 transition-colors duration-300"
+            className="hover:text-[#38a3a5] transition-colors duration-300"
             title="YouTube"
           >
             <FaYoutube size={24} />

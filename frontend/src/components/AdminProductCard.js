@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdModeEditOutline } from "react-icons/md";
 import AdminEditProduct from './AdminEditProduct';
-import displayINRCurrency from '../helpers/displayCurrency';
+import displayCADCurrency from '../helpers/displayCurrency';
 
 const AdminProductCard = ({
     data,
@@ -21,14 +21,20 @@ const AdminProductCard = ({
 
                 <p className='font-semibold'>
                   {
-                    displayINRCurrency(data.sellingPrice)
+                    displayCADCurrency(data.sellingPrice)
                   }
         
                 </p>
 
-                <div className='w-fit ml-auto p-2 bg-green-100 hover:bg-green-600 rounded-full hover:text-white cursor-pointer' onClick={()=>setEditProduct(true)}>
-                    <MdModeEditOutline/>
-                </div>
+                <button
+                onClick={() => setEditProduct(true)}
+                className="mt-2 flex items-center gap-1 px-3 py-1 text-white text-sm font-medium rounded-full transition-all hover:shadow-md"
+                style={{ backgroundColor: '#38a3a5' }}
+              >
+                <MdModeEditOutline size={16} />
+                <span>Edit</span>
+              </button>
+
 
             </div>
 

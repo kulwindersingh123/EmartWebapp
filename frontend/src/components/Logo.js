@@ -10,17 +10,18 @@ const Logo = () => {
       className="transition-transform duration-300 hover:scale-105"
     >
       <defs>
+        {/* Custom gradient using #5588a3 and a lighter tint */}
         <linearGradient id="emartGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#4f46e5" />
-          <stop offset="100%" stopColor="#9333ea" />
+          <stop offset="0%" stopColor="#84a9bd" /> {/* lighter tint */}
+          <stop offset="100%" stopColor="#5588a3" />
         </linearGradient>
       </defs>
 
       {/* Shopping cart icon */}
       <g transform="translate(15, 25)">
         <rect x="0" y="15" width="50" height="30" rx="5" fill="url(#emartGradient)" />
-        <circle cx="12" cy="48" r="5" fill="#6366f1" />
-        <circle cx="38" cy="48" r="5" fill="#9333ea" />
+        <circle cx="12" cy="48" r="5" fill="#84a9bd" />
+        <circle cx="38" cy="48" r="5" fill="#5588a3" />
         <path
           d="M5 15 L10 0 H50 L55 15 Z"
           fill="url(#emartGradient)"
